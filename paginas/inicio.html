@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="pci">
+        <div id="mn">
+            <button id="bm">M</button>
+
+            <nav id="menu" style="display: none;">
+                <ul class="menulink">
+                    <li>
+                        <a href="../paginas/inicio.html" class="menulink"> Início</a>
+                    </li>
+                    <li>
+                        <a href="" class="menulink"> Alunos</a>
+                    </li>
+                    <li>
+                        <a href="" class="menulink"> Cursos</a>
+                    </li>
+                    <li>
+                        <a href="" class="menulink">Login ou cadastro</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <script>
+                const botao = document.getElementById('bm');
+                const menu = document.getElementById('menu');
+
+                botao.addEventListener('click', () => {
+                    // Alterna entre mostrar e esconder
+                    if (menu.style.display === 'none') {
+                        menu.style.display = 'block';
+                    } else {
+                        menu.style.display = 'none';
+                    }
+                });
+            </script>
+        </div>
+        <div id="bv">
+            <h1>Seja bem-vindo a nossa plataforma</h1>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

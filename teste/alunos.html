@@ -1,0 +1,67 @@
+<!-- ---------- alunos.html (Lista de Alunos) ---------- -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exacta Aulas - Alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exacta Aulas</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Cursos</a>
+            <a href="inscricao.html">Nova Inscrição</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Nossos Alunos</h2>
+        <div id="alunosList">
+            <!-- Os alunos serão carregados aqui via JavaScript -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const inscricoes = JSON.parse(localStorage.getItem('inscricoes')) || [];
+            const alunosList = document.getElementById('alunosList');
+
+            if (inscricoes.length === 0) {
+                alunosList.innerHTML = '<p>Nenhum aluno inscrito ainda.</p>';
+                return;
+            }
+
+            // Agrupa alunos por curso
+            const alunosPorCurso = {
+                Matemática: [],
+                Física: [],
+                Química: []
+            };
+
+            inscricoes.forEach(aluno => {
+                alunosPorCurso[aluno.curso].push(aluno);
+            });
+
+            // Gera o HTML para cada curso
+            let html = '';
+            for (const curso in alunosPorCurso) {
+                if (alunosPorCurso[curso].length > 0) {
+                    html += `<h3>${curso}</h3><ul>`;
+                    alunosPorCurso[curso].forEach(aluno => {
+                        html += `
+                            <li>
+                                <strong>${aluno.nome}</strong> - 
+                                ${aluno.email} (Inscrito em: ${aluno.data})
+                            </li>
+                        `;
+                    });
+                    html += '</ul>';
+                }
+            }
+
+            alunosList.innerHTML = html;
+        });
+    </script>
+</body>
+</html>

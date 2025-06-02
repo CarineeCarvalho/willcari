@@ -1,0 +1,148 @@
+/* ---------- style.css ---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+}
+
+nav {
+    width: 50%;
+}
+
+nav a {
+    color: white;
+    float: right;
+    text-decoration: none;
+    margin: 0 0 0 10%;
+}
+
+#sbv {
+    font-size: 250%;
+}
+
+.container {
+    padding: 5% 10% 0 10%;
+}
+
+#titlle1 {
+    text-align: center;
+    margin: 5% 0 5% 0;
+    font-size: 250%;
+}
+
+.img1 {
+    float: left;
+    width: 48%;
+    margin: 0 0 7% 0;
+}
+
+.text1 {
+    font-size: 130%;
+    margin: 2% 0 0 4%;
+    text-align: left;
+    float: right;
+    width: 48%;
+}
+
+.text2 {
+    font-size: 130%;
+    text-align: right;
+    width: 48%;
+}
+
+.img2 {
+    margin: 10% 0 0 0;
+    float: right;
+    width: 48%;
+}
+
+#bi1 {
+    margin: 3% 30% 5% 30%;
+    width: 40%;
+    height: 50px;
+    border-radius: 10px ;
+    background-color: white;
+    a{
+    text-decoration: none;
+    font-size: 300%;
+    color: #2c3e50;
+    }
+}
+
+.curso {
+    margin: 2% 0 0 0;
+    border: 2px solid #ddd;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.botao {
+    background: #3498db;
+    color: white;
+    padding: 0.5% 1%;
+    border-radius: 3px;
+    margin: 1% 0 0 0;
+}
+
+form {
+    display: grid;
+    margin: 0 25% 0 25%;
+    width: 50%;
+}
+
+input,
+select {
+    padding: 0.5%;
+    margin: 1% 0 1% 0;
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid #34495e;
+}

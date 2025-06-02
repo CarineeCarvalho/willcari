@@ -1,0 +1,18 @@
+
+#pci{
+    background-color: #000070
+    ;
+    border-radius: 10px 10px 0 0;
+    padding: 1%;
+    width: 98%;
+    height: 100px;
+}
+#mn{
+    float: left;
+    display: flex;
+}
+#bv{
+    float: left;
+    display: flex;
+    margin: 0 0 0 5%;
+}

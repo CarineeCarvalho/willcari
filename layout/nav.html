@@ -1,0 +1,55 @@
+<!-- template.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <title>Sistema</title>
+
+
+</head>
+
+<body>
+  <div>
+    <button id="bm">Menu</button>
+
+    <nav id="menu" style="display: none;">
+      <ul class="menulink">
+        <li>
+          <a href="../paginas/inicio.html" class="menulink"> Início</a>
+        </li>
+        <li>
+          <a href="" class="menulink"> Alunos</a>
+        </li>
+        <li>
+          <a href="" class="menulink"> Cursos</a>
+        </li>
+        <li>
+          <a href="" class="menulink">Login ou cadastro</a>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      const botao = document.getElementById('bm');
+      const menu = document.getElementById('menu');
+
+      botao.addEventListener('click', () => {
+        // Alterna entre mostrar e esconder
+        if (menu.style.display === 'none') {
+          menu.style.display = 'block';
+        } else {
+          menu.style.display = 'none';
+        }
+      });
+    </script>
+    <div id="conteudo">
+      
+    </div>
+
+  </div>
+</body>
+
+</html>
